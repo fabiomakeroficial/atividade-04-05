@@ -1,0 +1,71 @@
+/* Configuracoes Gerais e Cores*/
+:root {
+    --cor-primaria: #0B2545;
+    --cor-secundaria: #134074;
+    --cor-destaque: #EEB902;
+    --fundo-branco: #F4F5F7;
+    --texto_escuro: #1D2A44;
+    --cor-branca: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--cor-branca);
+    color: var(--texto_escuro);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cabecalho */
+header {
+    background-color: var(--cor-primaria);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: var(--cor-branca);
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+nav a {
+    color: var(--cor-branca);
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--cor-destaque);
+}
+
+/* Rodape */
+footer {
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+}
