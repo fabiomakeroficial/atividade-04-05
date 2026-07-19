@@ -182,3 +182,55 @@ form {
 .btn-enviar-mensagem:hover {
     background-color: var(--cor-primaria);
 }
+
+
+/* ================================================
+   CONFIGURAÇÃO DE RESPONSIVIDADE (MEDIA QUERIES)
+   Telas de celulares (até 768px)
+   ================================================ */
+@media screen and (max-width: 768px) {
+    
+    /* 1. Cabeçalho em modo vertical */
+    header .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 10px;
+    }
+
+    /* 2. Ajuste do Banner Principal */
+    .banner-principal {
+        padding: 60px 0;
+    }
+
+    .banner-principal h1 {
+        font-size: 28px;
+    }
+
+    .banner-principal p {
+        font-size: 16px;
+    }
+
+    /* 3. Ajuste das seções gerais */
+    .sobre, .contato {
+        padding: 50px 0;
+    }
+
+    /* 4. Formulário ocupando a tela cheia do dispositivo */
+    form {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .btn-enviar-mensagem {
+    padding: 12px 10px;
+    font-size: 12px;
+    }
+
+    .btn-banner {
+    padding: 12px 10px;
+    font-size: 10px;
+    }
+}
