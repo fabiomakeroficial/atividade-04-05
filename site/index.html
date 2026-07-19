@@ -23,6 +23,7 @@
     <div class="container">
       <h1>Segurança e Conformidade para o Seu Sistema Bancário</h1>
       <p>Auditoria especializada em mitigar riscos, validar algoritmos e garantir conformidade regulatória com o Banco Central.</p>
+      <button id="btnBanner" class="btn-banner" onclick="location.href='#contato'">Agende uma Consulta Gratuita</button>
     </div>
   </section>
 
@@ -38,6 +39,30 @@
     <div class="container">
       <h2>Fale Conosco</h2>
       <div class="contato-grid">
+
+        <form id="formContato">
+          <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required placeholder="Digite seu nome completo">
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" required placeholder="seu@email.com">
+          </div>
+          <div class="form-group">
+            <label for="cep">CEP (Para atendimento local):</label>
+            <input type="text" id="cep" maxlength="8" required placeholder="Apenas números">
+          </div>
+          <div class="form-group">
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" readonly placeholder="Preenchido automaticamente pelo CEP">
+          </div>
+          <div class="form-group">
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" rows="4" required placeholder="Como podemos ajudar sua instituição?"></textarea>
+          </div>
+          <button type="submit" class="btn-enviar-mensagem">Enviar Mensagem</button>
+        </form>
 
       </div>
     </div>
